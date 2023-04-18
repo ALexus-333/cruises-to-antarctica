@@ -1,0 +1,13 @@
+.footer-nav {
+  align-self: center;
+  margin: 0 auto 0 40px;
+
+  @include vp-1023 {
+    align-self: start;
+    margin: 0 auto 0 25px;
+  }
+
+  @include vp-767 {
+    margin: 24px auto 10px 0;
+  }
+}

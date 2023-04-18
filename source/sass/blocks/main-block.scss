@@ -1,0 +1,98 @@
+.main-block {
+  min-height: 657px;
+  margin: 0 auto;
+  background-color: #427fbe;
+  background-image: url("../img/main.webp");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media (min-width: $vp-1024) and (min-resolution: $retina-dppx) {
+    background-image: url("../img/main@2x.webp");
+  }
+
+  @include vp-1023 {
+    min-height: 638px;
+    background-image: url("../img/main-tablet.webp");
+
+    @include retina {
+      background-image: url("../img/main-tablet@2x.webp");
+    }
+  }
+
+  @include vp-767 {
+    min-height: 500px;
+    background-image: url("../img/main-mobile.webp");
+
+    @include retina {
+      background-image: url("../img/main-mobile@2x.webp");
+    }
+  }
+}
+
+.main-block__wrapper {
+  position: relative;
+  top: 0;
+  left: -6.2%;
+  max-width: 800px;
+  min-width: 636px;
+  margin: 0 auto;
+  padding: 270px 0 0 0;
+
+  @include vp-1023 {
+    left: 2.7%;
+    max-width: 720px;
+    min-width: 668px;
+    padding: 268px 0 0;
+  }
+
+  @include vp-767 {
+    left: 0;
+    max-width: 737px;
+    min-width: 290px;
+    padding: 176px 15px 0;
+  }
+}
+
+.main-block h1 {
+  margin: 0;
+  font-family: $ff-montserrat-700;
+  font-weight: 700;
+  font-size: 54px;
+  line-height: 66px;
+  color: $color-default-white;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @include vp-1023 {
+    font-size: 50px;
+    line-height: 61px;
+    text-shadow: none;
+  }
+
+  @include vp-767 {
+    font-size: 36px;
+    line-height: 45px;
+  }
+}
+
+.main-block p {
+  margin: 0;
+  padding: 12px 0 20px;
+  font-size: 20px;
+  color: $color-default-white;
+  text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+
+  @include vp-1023 {
+    font-size: 18px;
+    line-height: 22px;
+    text-shadow: none;
+  }
+
+  @include vp-767 {
+    font-size: 16px;
+  }
+}
+
+.main-block__wrapper--opened-mobile {
+  display: none;
+}

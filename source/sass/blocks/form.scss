@@ -1,0 +1,133 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 403px;
+  min-width: 380px;
+  padding: 45px 50px 50px;
+  background: $color-default-black;
+  box-shadow: 0 4px 45px rgba(1, 28, 64, 0.15);
+
+  @include vp-1023 {
+    max-width: none;
+    min-width: auto;
+    width: 403px;
+    margin: 0 auto;
+  }
+
+  @include vp-767 {
+    max-width: 737px;
+    min-width: 290px;
+    width: auto;
+    padding: 36px 30px 40px;
+  }
+}
+
+.form p {
+  margin: 0;
+  padding-bottom: 26px;
+  font-family: $ff-montserrat-500;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 27px;
+  color: $color-default-white;
+
+  @include vp-767 {
+    max-width: 717px;
+    min-width: 214px;
+    padding-bottom: 27px;
+    line-height: 25px;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.form__field {
+  margin-bottom: 20px;
+}
+
+.form__field input {
+  width: 100%;
+  height: 43px;
+  padding: 11px 16px;
+  font-size: 14px;
+  line-height: 21px;
+  color: $color-default-black;
+  background: $color-default-white;
+  border: none;
+
+  &::placeholder {
+    font-family: $ff-montserrat-400;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $color-default-black;
+    opacity: 0.7;
+  }
+}
+
+.form__assent {
+  display: grid;
+  grid-template-columns: 18px auto;
+  gap: 6px;
+  margin: 0 0 30px;
+  cursor: pointer;
+
+  @include vp-767 {
+    grid-template-columns: 20px auto;
+    gap: 8px;
+    margin-bottom: 26px;
+  }
+}
+
+.form__assent-mark {
+  position: relative;
+  display: block;
+  width: 18px;
+  height: 18px;
+  background-color: $color-default-white;
+
+  @include vp-767 {
+    width: 20px;
+    height: 20px;
+  }
+}
+
+.form__assent-label {
+  display: block;
+  padding-top: 3px;
+  font-size: 10px;
+  line-height: 13px;
+  color: $color-default-white;
+
+
+  @include vp-767 {
+    margin: auto 0;
+    padding: 0;
+    line-height: 12px;
+  }
+}
+
+input[type="checkbox"]:checked + .form__assent-mark::before {
+  position: absolute;
+  content: "";
+  z-index: 5;
+  top: 5px;
+  left: 4px;
+  width: 10px;
+  height: 6px;
+  background-color: $color-default-white;
+  background-image: url("../img/svg/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include vp-767 {
+    top: 7px;
+    left: 5px;
+  }
+}
+
+.form__assent-input:hover + .form__assent-mark,
+.form__assent-input:focus + .form__assent-mark {
+  opacity: 0.8;
+}

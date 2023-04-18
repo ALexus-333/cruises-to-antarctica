@@ -1,0 +1,50 @@
+.btn {
+  display: block;
+  width: 100%;
+  min-height: 40px;
+  padding: 10px 20px;
+  font-family: $ff-montserrat-600;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
+  user-select: none;
+
+  color: $color-default-black;
+
+  background-color: $color-default-white;
+  border: none;
+  cursor: pointer;
+
+  transition: opacity $trans-default;
+
+  &--red {
+    background-color: $color-torch-red;
+  }
+
+  &:disabled {
+    opacity: 0.5;
+
+    pointer-events: none;
+  }
+
+  @include hover-focus {
+    opacity: 0.8;
+  }
+}
+
+.btn--to-book {
+  margin: 26px 0 12px;
+  text-align: center;
+
+  @include vp-1023 {
+    margin-bottom: 6px;
+  }
+
+  @include vp-374 {
+    margin-bottom: 16px;
+  }
+}
+
+.btn--form-send {
+  min-height: 43px;
+}
