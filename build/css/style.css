@@ -700,10 +700,7 @@ button,
 .main-header__link-logo {
   display: block;
   padding: 35px 0;
-}
-
-.main-header__link-logo .main-header__logo {
-  fill: #f9fbfd;
+  color: #f9fbfd;
 }
 
 .main-header__logo {
@@ -1879,10 +1876,7 @@ input[type=checkbox]:checked + .form__assent-mark::before {
 
   .main-header__link-logo--opened-mobile {
     left: 35px;
-  }
-
-  .main-header__link-logo--opened-mobile .main-header__logo {
-    fill: #011c40;
+    color: #011c40;
   }
 
   .main-header--nojs {
@@ -1890,7 +1884,7 @@ input[type=checkbox]:checked + .form__assent-mark::before {
   }
 
   .main-header--nojs .main-header__logo {
-    fill: #011c40;
+    color: #011c40;
   }
 
   .main-header--nojs .main-nav__list {
