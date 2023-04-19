@@ -953,6 +953,10 @@ button,
   background-color: #f9fbfd;
 }
 
+.advantages__item:hover {
+  background-color: rgba(1, 28, 64, 0.25);
+}
+
 .advantages__item--desktop {
   padding-right: 45px;
 }
