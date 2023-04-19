@@ -708,6 +708,14 @@ button,
   height: 38px;
 }
 
+.main-header__logo:hover {
+  opacity: 0.8;
+}
+
+.main-header__logo:active {
+  opacity: 0.4;
+}
+
 .main-nav {
   padding: 35px 0 39px;
 }
@@ -1417,7 +1425,6 @@ input[type=checkbox]:checked + .form__assent-mark::before {
 .main-footer__logo {
   width: 70px;
   height: 38px;
-  fill: #f9fbfd;
 }
 
 .main-footer__logo:hover {
@@ -1433,6 +1440,7 @@ input[type=checkbox]:checked + .form__assent-mark::before {
   width: 70px;
   height: 38px;
   margin: auto 0;
+  color: #f9fbfd;
 }
 
 .footer-nav {
