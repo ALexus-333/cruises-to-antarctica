@@ -908,7 +908,7 @@ button,
   margin: 0 auto;
   padding: 110px 0 100px;
   background-color: #cedfef;
-  background-image: url("../img/adventages.webp");
+  background-image: url("../img/advantages.webp");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -1494,7 +1494,7 @@ input[type=checkbox]:checked + .form__assent-mark::before {
   }
 
   .advantages {
-    background-image: url("../img/adventages@2x.webp");
+    background-image: url("../img/advantages@2x.webp");
   }
 
   .booking {
