@@ -97,6 +97,10 @@
   }
 }
 
+.advantages__item:hover {
+  background-color: rgba($color: $color-default-black, $alpha: 0.25);
+}
+
 .advantages__item--desktop {
   padding-right: 45px;
 
