@@ -845,7 +845,6 @@ button,
 
 .main-block h1 {
   margin: 0;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 700;
   font-size: 54px;
   line-height: 66px;
@@ -891,7 +890,6 @@ button,
   min-width: 431px;
   margin: 0;
   padding: 9px 0 24px;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -934,7 +932,6 @@ button,
 .advantages__wrapper h2 {
   margin: 0 auto;
   padding-bottom: 49px;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -968,7 +965,6 @@ button,
 
 .advantages__item h3 {
   margin: 12px 0 8px;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1013,7 +1009,6 @@ button,
 .cruises__wrapper h2 {
   margin: 0 auto;
   padding-bottom: 49px;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 600;
   font-size: 28px;
   line-height: 42px;
@@ -1063,7 +1058,6 @@ button,
 
 .cruises__item h3 {
   margin: auto 4px 0;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1088,7 +1082,6 @@ button,
 .cruises__inner dt {
   padding: 0;
   padding-bottom: 1px;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 500;
   font-size: 14px;
   line-height: 20px;
@@ -1098,7 +1091,6 @@ button,
   margin: 0;
   padding: 0;
   padding-bottom: 11px;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -1165,7 +1157,6 @@ button,
   min-width: 400px;
   margin: 0;
   padding: 0 0 8px;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 700;
   font-size: 40px;
   line-height: 60px;
@@ -1205,7 +1196,6 @@ button,
 .form p {
   margin: 0;
   padding-bottom: 26px;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1222,53 +1212,29 @@ button,
   padding: 11px 16px;
   font-size: 14px;
   line-height: 21px;
+  font-family: "Montserrat", "Arial", sans-serif;
   color: #011c40;
   background: #f9fbfd;
   border: none;
 }
 
 .form__field input::-webkit-input-placeholder {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #011c40;
   opacity: 0.7;
 }
 
 .form__field input::-moz-placeholder {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #011c40;
   opacity: 0.7;
 }
 
 .form__field input:-ms-input-placeholder {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #011c40;
   opacity: 0.7;
 }
 
 .form__field input::-ms-input-placeholder {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #011c40;
   opacity: 0.7;
 }
 
 .form__field input::placeholder {
-  font-family: "Montserrat", "Arial", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 21px;
-  color: #011c40;
   opacity: 0.7;
 }
 
@@ -1354,7 +1320,6 @@ button,
 .contacts__inner > p {
   margin: 0;
   padding: 0 0 32px;
-  font-family: "Montserrat", "Arial", sans-serif;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -1980,8 +1945,6 @@ button,
   .site-list__button--mobile {
     display: block;
     padding: 9px 10px;
-    font-family: "Montserrat", "Arial", sans-serif;
-    font-weight: 500;
     font-size: 18px;
     line-height: 22px;
     color: #011c40;
