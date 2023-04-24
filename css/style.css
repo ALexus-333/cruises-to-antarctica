@@ -1895,12 +1895,6 @@ button,
     color: #011c40;
   }
 
-  .main-header--nojs .main-nav__list {
-    position: relative;
-    top: 25px;
-    left: 0;
-  }
-
   .main-nav__toggle {
     position: absolute;
     top: 24px;
@@ -1927,6 +1921,12 @@ button,
   .main-nav--nojs .main-nav__wrapper {
     position: relative;
     display: block;
+  }
+
+  .main-nav--nojs .main-nav__wrapper .main-nav__list {
+    position: relative;
+    top: 25px;
+    left: 0;
   }
 
   .main-nav--opened .main-nav__wrapper {
