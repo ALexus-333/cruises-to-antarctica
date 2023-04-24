@@ -57,6 +57,12 @@
   .main-nav--nojs .main-nav__wrapper {
     position: relative;
     display: block;
+
+    .main-nav__list {
+      position: relative;
+      top: 25px;
+      left: 0;
+    }
   }
 }
 
