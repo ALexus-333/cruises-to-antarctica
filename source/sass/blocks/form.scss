@@ -26,7 +26,7 @@
 .form p {
   margin: 0;
   padding-bottom: 26px;
-  font-family: $ff-montserrat-500;
+  font-family: $ff-montserrat;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -57,7 +57,7 @@
   border: none;
 
   &::placeholder {
-    font-family: $ff-montserrat-400;
+    font-family: $ff-montserrat;
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -66,7 +66,7 @@
   }
 }
 
-.form__assent {
+.form__inner label {
   display: grid;
   grid-template-columns: 18px auto;
   gap: 6px;
@@ -78,6 +78,30 @@
     gap: 8px;
     margin-bottom: 26px;
   }
+}
+
+.form__inner input[type="checkbox"]:checked + .form__assent-mark::before {
+  position: absolute;
+  content: "";
+  z-index: 5;
+  top: 5px;
+  left: 4px;
+  width: 10px;
+  height: 6px;
+  background-color: $color-default-white;
+  background-image: url("../img/svg/icon-check.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @include vp-767 {
+    top: 7px;
+    left: 5px;
+  }
+}
+
+.form__inner input[type="checkbox"]:hover + .form__assent-mark,
+.form__inner input[type="checkbox"]:focus + .form__assent-mark {
+  opacity: 0.8;
 }
 
 .form__assent-mark {
@@ -106,28 +130,4 @@
     padding: 0;
     line-height: 12px;
   }
-}
-
-input[type="checkbox"]:checked + .form__assent-mark::before {
-  position: absolute;
-  content: "";
-  z-index: 5;
-  top: 5px;
-  left: 4px;
-  width: 10px;
-  height: 6px;
-  background-color: $color-default-white;
-  background-image: url("../img/svg/icon-check.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-
-  @include vp-767 {
-    top: 7px;
-    left: 5px;
-  }
-}
-
-.form__assent-input:hover + .form__assent-mark,
-.form__assent-input:focus + .form__assent-mark {
-  opacity: 0.8;
 }
