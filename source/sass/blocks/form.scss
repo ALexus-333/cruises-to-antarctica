@@ -26,7 +26,6 @@
 .form p {
   margin: 0;
   padding-bottom: 26px;
-  font-family: $ff-montserrat;
   font-weight: 500;
   font-size: 18px;
   line-height: 27px;
@@ -52,16 +51,12 @@
   padding: 11px 16px;
   font-size: 14px;
   line-height: 21px;
+  font-family: $ff-montserrat;
   color: $color-default-black;
   background: $color-default-white;
   border: none;
 
   &::placeholder {
-    font-family: $ff-montserrat;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 21px;
-    color: $color-default-black;
     opacity: 0.7;
   }
 }
